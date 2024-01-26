@@ -1,0 +1,90 @@
+Last login: Fri Jan 26 15:52:53 on ttys001
+meganrychwa@Megans-Air ~ % $echo $FLASK_ENV
+meganrychwa@Megans-Air ~ % .bash_profile
+zsh: command not found: .bash_profile
+meganrychwa@Megans-Air ~ % echo $FLASK_ENV
+
+meganrychwa@Megans-Air ~ % ls
+Applications		Library			Public
+Desktop			Movies			Terminal_Exercises
+Documents		Music			github_exercises
+Downloads		Pictures		venv
+meganrychwa@Megans-Air ~ % cd Documents
+meganrychwa@Megans-Air Documents % ls
+Documents Misc.			Salesforce
+Health				SpringBoard
+Healthy Home Edit		Springboard Files
+Jobs:Career			Transcription Work
+Launch Academy			Yeti
+Pictures Misc.			Zoom
+SB Finished Editor Files
+meganrychwa@Megans-Air Documents % cd SpringBoard
+meganrychwa@Megans-Air SpringBoard % ls
+Hack_Snooze		hello_flask
+flask-greet-calc	jeopardy
+meganrychwa@Megans-Air SpringBoard % cd flask-greet-calc
+meganrychwa@Megans-Air flask-greet-calc % python3 -m venv venv
+meganrychwa@Megans-Air flask-greet-calc % source venv/bin/activate
+(venv) meganrychwa@Megans-Air flask-greet-calc % pip3 install flask
+Requirement already satisfied: flask in ./venv/lib/python3.7/site-packages (2.2.5)
+Requirement already satisfied: importlib-metadata>=3.6.0; python_version < "3.10" in ./venv/lib/python3.7/site-packages (from flask) (6.7.0)
+Requirement already satisfied: Jinja2>=3.0 in ./venv/lib/python3.7/site-packages (from flask) (3.1.2)
+Requirement already satisfied: click>=8.0 in ./venv/lib/python3.7/site-packages (from flask) (8.1.7)
+Requirement already satisfied: itsdangerous>=2.0 in ./venv/lib/python3.7/site-packages (from flask) (2.1.2)
+Requirement already satisfied: Werkzeug>=2.2.2 in ./venv/lib/python3.7/site-packages (from flask) (2.2.3)
+Requirement already satisfied: typing-extensions>=3.6.4; python_version < "3.8" in ./venv/lib/python3.7/site-packages (from importlib-metadata>=3.6.0; python_version < "3.10"->flask) (4.7.1)
+Requirement already satisfied: zipp>=0.5 in ./venv/lib/python3.7/site-packages (from importlib-metadata>=3.6.0; python_version < "3.10"->flask) (3.15.0)
+Requirement already satisfied: MarkupSafe>=2.0 in ./venv/lib/python3.7/site-packages (from Jinja2>=3.0->flask) (2.1.3)
+You are using pip version 10.0.1, however version 23.3.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+(venv) meganrychwa@Megans-Air flask-greet-calc % pip3 freeze > requirements.txt
+You are using pip version 10.0.1, however version 23.3.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+(venv) meganrychwa@Megans-Air flask-greet-calc % git init
+Reinitialized existing Git repository in /Users/meganrychwa/Documents/SpringBoard/flask-greet-calc/.git/
+(venv) meganrychwa@Megans-Air flask-greet-calc % .gitignore venv/
+zsh: command not found: .gitignore
+(venv) meganrychwa@Megans-Air flask-greet-calc % .gitignore
+zsh: command not found: .gitignore
+(venv) meganrychwa@Megans-Air flask-greet-calc % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	.gitignore
+	calc/
+	greet/
+	requirements.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+(venv) meganrychwa@Megans-Air flask-greet-calc % ls
+calc			requirements.txt
+greet			venv
+(venv) meganrychwa@Megans-Air flask-greet-calc % cd greet
+(venv) meganrychwa@Megans-Air greet % /welcome
+zsh: no such file or directory: /welcome
+(venv) meganrychwa@Megans-Air greet % python3 -m unittest test.py
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.004s
+
+OK
+(venv) meganrychwa@Megans-Air greet % cd ..
+(venv) meganrychwa@Megans-Air flask-greet-calc % ls
+calc			requirements.txt
+greet			venv
+(venv) meganrychwa@Megans-Air flask-greet-calc % cd calc
+(venv) meganrychwa@Megans-Air calc % -m unittest test.py
+zsh: command not found: -m
+(venv) meganrychwa@Megans-Air calc % -m unittest test.py
+zsh: command not found: -m
+(venv) meganrychwa@Megans-Air calc % python3 -m unittest test.py
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.006s
+
+OK
+(venv) meganrychwa@Megans-Air calc % 
